@@ -12,7 +12,7 @@ namespace Firework
     {
         public void Configuration(IAppBuilder app)
         {
-            GlobalHost.DependencyResolver.UseRedis("fourthofjuly.redis.cache.windows.net:6380,password=2nW2uzqOXKooqMBUl5OwgXyUz+cXsKpkEXhxkN7283M=,ssl=True,abortConnect=False", 6380, "2nW2uzqOXKooqMBUl5OwgXyUz+cXsKpkEXhxkN7283M=", "Fireworks");
+            GlobalHost.DependencyResolver.UseRedis("fourthofjuly.redis.cache.windows.net", 6379, "2nW2uzqOXKooqMBUl5OwgXyUz+cXsKpkEXhxkN7283M=", "Fireworks");
             app.MapSignalR();
         }
     }
