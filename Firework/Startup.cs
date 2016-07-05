@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading.Tasks;
 using Microsoft.Owin;
 using Owin;
@@ -12,7 +12,7 @@ namespace Firework
     {
         public void Configuration(IAppBuilder app)
         {
-            GlobalHost.DependencyResolver.UseRedis("unclebjsfireworks.redis.cache.windows.net", 6379, "lFIzvIvRAMLKoIk254DLzKRdDfBh2OOvdW8yWLMDRG4=", "Fireworks");
+            GlobalHost.DependencyResolver.UseRedis("fourthofjuly.redis.cache.windows.net", 6379, "2nW2uzqOXKooqMBUl5OwgXyUz+cXsKpkEXhxkN7283M=", "Fireworks");
             app.MapSignalR();
         }
     }
